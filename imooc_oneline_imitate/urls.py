@@ -22,6 +22,7 @@ from django.views.decorators.csrf import csrf_exempt
 import xadmin
 
 from apps.users.views import LoginView, LogoutView, SendSmsView, DynamicLoginView, RegisterView
+from apps.organizations.views import OrgView
 
 
 urlpatterns = [
@@ -35,6 +36,9 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
     url(r'^captcha/', include('captcha.urls')),
     url(r'^send_sms/', csrf_exempt(SendSmsView.as_view()), name='send_sms'),
+
+    # organization page
+    url(r'^org_list/', OrgView.as_view(), name='org_list'),
 ]
 
 
