@@ -12,4 +12,4 @@ Use python to send text message for login or signup, redis for storage.
 
 tried to build production environment on alibaba cloud, may later on AWS. 
 
-self-learning and use the front-end code from Immoc.
+self-learning and use the front-end code from Imooc.
